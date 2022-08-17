@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap-CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous">
+
+<!-- Javascript en JQuery code -->
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="http://resources/demos/style.css">
+        
+        <script>
+            $(function() {				 
+            $( "#tabs" ).tabs();
+            }); 
+        </script>
+
+<!-- Eigen verandering in de Bootstrap-CSS -->        
+    <style>
+        footer, header {            
+            background-color: #6c757d;
+            margin: 15px;
+        }
+        .nav-link {
+            color: #fff; 
+        }        
+    </style> 
+
+        <title>Mijn Huiswerk Les 25</title>
+
+    </head>
+
+    <body class="d-flex h-100 text-center text-white bg-dark">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+<!-- De Header en navigatie -->            
+            <header class="mb-auto" style="min-height: 150px;">
+                <div id="top">
+                    <h3 class="float-md-start mb-0" style="margin: 30px 0 0 30px; color: #fff;">Patricia Meijer<br><i>Over Helleborus</i></h3>
+                    <nav class="nav nav-masthead justify-content-center float-md-end" style="margin: 40px 30px 0 0; font-size: larger;">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#tabs">Soorten</a>
+                        <a class="nav-link" href="#inhoud2">Meer informatie</a>
+                    </nav>
+                </div>
+            </header>
+
+<!-- De inhoud deel 1 -->            
+            <main class="px-3">
+                <h1 style="color: #0d6efd; margin: 25px 0;">Welkom op mijn website</h1> 
+
+                <div class="container-sm">
+                      <p>Deze website gaat over mijn favoriete plant, de Helleborus, ook wel kerstroos of nieskruid genoemd.
+                      </p><br>
+                    <img src="afbeeldingen/helleborus-blooms.jpg" alt="Verschillende kleuren Helleborus bloemen" style="width: 100%">
+                      <br><br>
+                      <p>Helleborus, is een zeer geliefde vaste plant in de tuin. 
+                        Dit komt mede doordat de sterke planten in de winter al bloeien met prachtige bloemen. 
+                        De tientallen soorten helleborus die in Zuid- en Midden-Europa tot in West-Azië voorkomen, 
+                        behoren tot de boterbloemenfamilie. De meest bekende variant hiervan is de kerstroos, ofwel helleborus niger. 
+                      </p>    
+                    <h3 style="color: #0d6efd; margin: 25px 0;">Verzorging</h3>
+                      <p>In pot gekochte planten die je eerst een tijdje in de woonkamer zet kunnen daarna in de tuin worden geplant.
+                        De planten houden van een beschut, half beschaduwd plekje en kunnen hier jarenlang kunnen blijven staan. 
+                        Alle helleborussen houden van humusrijke grond die wat kalk bevat. 
+                        Qua verzorging alleen jaarlijks voorzien van extra voeding en verder met rust laten. 
+                        Ze zullen dan steeds rijker gaan bloeien.
+                      </p>
+                    <h3 style="color: #0d6efd; margin: 25px 0;">Standplaats</h3>
+                      <p>November is een goede maand om deze tuinplant een plekje in de tuin te geven. 
+                        De kerstroos, helleborus niger, kan overal in de tuin worden geplant. 
+                        Zowel in de halfschaduw als op een zonnig plekje. Vanaf november tot in maart zijn de prachtige bloemen te zien. 
+                        Zelfs sneeuw of vorst doen de kerstroos niets. Als de tuinplant het naar z'n zin heeft, 
+                        komt hij elk jaar opnieuw tot bloei.
+                      </p>
+                    <h3 style="color: #0d6efd; margin: 25px 0;">Insecten lokkers</h3>
+                      <p>Er zijn rassen met enkele en met gevulde bloemen. Die bloemen hebben iets bijzonders: 
+                        het zijn niet de kroonbladen, maar de kelkbladen die de kleur dragen. Ze zijn tot ver in juni heel decoratief. 
+                        De kroonbladen lijken te ontbreken, maar zijn in werkelijkheid veranderd in kleine nectar-gevende orgaantjes 
+                        die met hun zoete vocht insecten lokken voor de bestuiving van de knikkende bloemen.
+                      </p>    
+                    <br><br>
+                </div>    
+
+<!-- De JQuery invoeging -->               
+                <div class="container-sm" id="jquery-tabs">
+                    <h3 style="color: #0d6efd; margin: 25px 0;">Een paar soorten</h3>
+                    <div id="tabs">
+                        <ul>
+                          <li><a href="#tabs-1">Helleborus Niger</a></li>
+                          <li><a href="#tabs-2">Helleborus Purpurascens</a></li>
+                          <li><a href="#tabs-3">Helleborus Sternii</a></li>
+                          <li><a href="#tabs-4">Helleborus Ashwood Double</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                          <img src="afbeeldingen/helleborus-niger.jpg" alt="Helleborus Niger">
+                              <p>De Helleborus niger is de bekende kerstroos.<br>
+                                Vanaf net voor of na kerst bloeit deze plant met helderwitte bloemen en een geelgroen hartje met gele meeldraden.<br>
+                                Met het donkergroene blad een schitterend gezicht in de sneeuw!
+                              </p>
+                        </div>
+                        <div id="tabs-2">
+                          <img src="afbeeldingen/helleborus-purpur.jpg" alt="Helleborus Purpurascens">
+                              <p>De Helleborus purpurascens bloeit van januari tot april<br> 
+                                met prachtige rode bloemen en wordt zo’n 40 cm hoog.<br>
+                                De lange meeldraden en overhangende trossen bloemen zijn typerend voor deze soort.
+                              </p>
+                        </div>
+                        <div id="tabs-3">
+                          <img src="afbeeldingen/helleborus-sternii.jpg" alt="Helleborus Sternii">
+                              <p>De Helleborus sternii is een geliefde variant.<br> 
+                                Tussen de ruw gerande bladeren verschijnen in januari de zachtroze bloemen met een groene zweem.<br>
+                                De plant blijft tot april in bloei.
+                              </p>
+                        </div>
+                        <div id="tabs-4">
+                            <img src="afbeeldingen/helleborus-Ashwood.jpg" alt="Helleborus Ashwood Double">
+                                <p>Een vorm uit de stal van de Ashwood Nurseries in Engeland<br> 
+                                    U vindt ze ook onder de naam Ashwood Garden Hybrids. <br>
+                                    Deze donkere, dubbele bloem is een nakomeling van veel verschillende soorten.
+                                </p>
+                          </div>
+                          <a class="nav-link" href="#top" style="font-size: 1.5em;"><strong>Home</strong></a>  
+                    </div>
+                    <br><br>	
+                </div>
+
+<!-- Inhoud deel 2 --> 
+                <div class="container-sm" id="inhoud2">      
+                    <h3 style="color: #0d6efd; margin: 25px 0;">Ziekten en plagen</h3>
+                      <p>Helleborussen zijn gevoelig voor bladvlekkenziekte. Dit is vooral in het najaar, 
+                        tegen de tijd dat de bloeistengels van de plant verschijnen. 
+                        Bladvlekkenziekte kun je makkelijk herkennen aan de zwarte plekken op het blad. 
+                        Je kunt de ziekte voorkomen en bestrijden door in het najaar het oude blad weg te knippen. 
+                        Zo verklein je de kans dat het nieuwe blad de ziekte overneemt. Winstpuntje bij het wegknippen van het oude blad 
+                        is ook dat de prachtige bloemen van de helleborus dan ook veel beter tot hun recht komen.
+                      </p>
+                    <h3 style="color: #0d6efd; margin: 25px 0;">Geveltuin</h3>
+                      <p>Heb jij een geveltuintje? Daarvoor is de kerstroos is een ideale plant. 
+                        Dat komt omdat de grond rondom een gevel of muur vaak veel kalk bevat en daar is de kerstroos dol op.
+                      </p>
+                    <h3 style="color: #0d6efd; margin: 25px 0;">Leuk weetje</h3>
+                      <p>Heel interessant is de manier waarop deze planten hun bloemen tegen vorst beschermen. 
+                        Als het flink gaat vriezen pompt de plant het vocht, dat ze tijdelijk in de bladeren en wortels opslaan, eruit.
+                        Hierdoor hangen de bloemen dan even slap, maar ze bevriezen niet. 
+                        Zodra het weer beter wordt, komt het vocht terug en staan de bloemen er snel weer stralend bij!
+                      </p>    
+                </div>   
+                <br><br>
+            </main>    
+
+<!-- De Footer -->            
+            <footer>
+              <div class="container">
+                <div class="row" style="min-height: 150px;">
+                    <div class="col align-self-center row justify-content-start">
+                        <a class="nav-link" href="#top" style="font-size: 1.5em;"><strong>Home</strong></a>
+                    </div>
+                    <div class="col align-self-center "></div>
+                    <div class="col align-self-center row justify-content-end">Huiswerk les 25 &nbsp;&nbsp;  &copy; 2022 Patricia</div>
+                </div>
+              </div>  
+            </footer>  
+        </div>
+
+<!-- De Bootstrap code -->        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+          crossorigin="anonymous">
+        </script>
+            <noscript>Helaas, uw browser ondersteunt geen scripts</noscript>
+    </body>
+</html>
